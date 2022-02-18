@@ -69,8 +69,11 @@ const FindCrypto = () => {
             <Link key={i} to={`/cryptocurrency/${id}`}>
               <div className='result-row'>
                 <div className='result-name-container'>
-                  <img src={image} className='img-list' alt='' />
-                  <span>{name}</span>
+                  <div className='name-search-container'>
+                    <img src={image} className='img-list' alt='' />
+                    <span className='name-search'>{name}</span>
+                  </div>
+
                   <span className='result-symbol'>
                     ({symbol.toUpperCase()})
                   </span>

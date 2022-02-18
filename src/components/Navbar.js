@@ -6,6 +6,7 @@ const Navbar = () => {
   const [crypto, setCrypto] = useState('');
   const [showSearch, setShowSearch] = useState(false);
   const [resize, setResize] = useState(false);
+  const [logoResize, setLogoResize] = useState(false);
   const [noMargin, setNoMargin] = useState(false);
   const foc = useRef();
   const ref = useRef();
@@ -22,7 +23,7 @@ const Navbar = () => {
     <nav className='navbar'>
       {/* <div className='nav-center'> */}
       <Link to='/'>
-        <h1 className='logo'>Cryptos</h1>
+        <h1 className={`logo ${logoResize && 'logo-resize'}`}>Cryptos</h1>
       </Link>
 
       <div className={`search-container `}>
@@ -34,6 +35,7 @@ const Navbar = () => {
             setShowSearch(!showSearch);
             setResize(!resize);
             setNoMargin(!noMargin);
+            setLogoResize(!logoResize);
           }}
         >
           <FaSearch size={`${resize ? 20 : 30}`} />
