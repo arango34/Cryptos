@@ -929,7 +929,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.5rem;
 }
 
 .result-name-container {
@@ -942,6 +941,10 @@ p {
 
 .name-search {
   margin-right: 0.5rem;
+}
+
+.img-search {
+  margin-right: 0.35rem;
 }
 
 @media screen and (min-width: 1200px) {

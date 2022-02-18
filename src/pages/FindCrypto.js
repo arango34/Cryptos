@@ -70,7 +70,7 @@ const FindCrypto = () => {
               <div className='result-row'>
                 <div className='result-name-container'>
                   <div className='name-search-container'>
-                    <img src={image} className='img-list' alt='' />
+                    <img src={image} className='img-list img-search' alt='' />
                     <span className='name-search'>{name}</span>
                   </div>
 
