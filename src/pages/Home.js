@@ -120,7 +120,7 @@ const Home = () => {
                   </div>
                   <div
                     className={`container 24h-container ${
-                      change && change && change.toString().includes('-')
+                      change && change.toString().includes('-')
                         ? 'isDown'
                         : 'isUp'
                     }`}

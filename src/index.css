@@ -387,7 +387,7 @@ p {
   font-size: 1.25rem;
   font-weight: bold;
   padding-bottom: 0.1rem;
-  letter-spacing: -0.07rem;
+  letter-spacing: -0.025rem;
 }
 
 .facare {
@@ -518,13 +518,19 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.name-div {
+  display: flex;
+  align-items: center;
+}
+
 .img-name {
   height: 1.65rem;
   width: 1.65rem;
+  margin-right: 0.25rem;
 }
 
 .symbol {
-  margin-top: 0.25rem;
+  margin-top: 0.15rem;
   font-weight: bolder;
   font-size: 0.85rem;
   letter-spacing: -0.02rem;

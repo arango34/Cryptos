@@ -57,8 +57,11 @@ const CoinHeader = ({ crypto }) => {
       <div className='coin-container'>
         <span className='rank'>{rank ? `Rank #${rank}` : 'Unranked'}</span>
         <div className='name-container'>
-          <img src={image.small} alt='' className='img-name' />
-          <span className='name-big'>{name}</span>
+          <div className='name-div'>
+            <img src={image.small} alt='' className='img-name' />
+            <span className='name-big'>{name}</span>
+          </div>
+
           <span className='symbol'>({symbol.toUpperCase()})</span>
         </div>
         <div className='coin-price-container'>
